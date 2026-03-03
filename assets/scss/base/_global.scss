@@ -1,10 +1,10 @@
 // ============================================
 //  GLOBAL — Base styles & utilities
 // ============================================
-
-@use "../modules/common/button";
-@use "../modules/layout/navbar";
-@use "../modules/layout/footer";
+@use "../abstracts/index"as *;
+@use "../modules/common/button"as *;
+@use "../modules/layout/navbar"as *;
+@use "../modules/layout/footer"as *;
 
 body {
   font-family: $font-main;

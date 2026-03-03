@@ -2,5 +2,5 @@
 //  STYLE — Entry point
 // ============================================
 
-@use "assets/scss/base/reset";
-@use "assets/scss/base/global";
+@use "./base/reset"as *;
+@use "./base/global"as *;

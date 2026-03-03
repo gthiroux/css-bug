@@ -1,3 +1,9 @@
 // ============================================
 //  PAGE — INDEX
 // ============================================
+@use "../modules/sections/index/brands"as *;
+@use "../modules/common/collection"as *;
+@use "../modules/sections/index/features"as *;
+@use "../modules/sections/index/hero"as *;
+@use "../modules/sections/index/highlight"as *;
+@use "../modules/sections/index/testimonials"as *;

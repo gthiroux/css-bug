@@ -2,6 +2,7 @@
 //  PAGE — SHOP
 // ============================================
 
-@use "../abstracts" as *;
-@use "../modules/common/newsletter";
-@use "../modules/sections/shop/shop";
+@use "../abstracts"as *;
+@use "../modules/common/collection";
+@use "../modules/common/newsletter"as *;
+@use "../modules/sections/shop/shop"as *;

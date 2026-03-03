@@ -2,7 +2,7 @@
 //  NEWSLETTER
 // ============================================
 
-@use "../../abstracts" as *;
+@use "../../abstracts/index"as *;
 
 .newsletter {
   padding-block: $space-section;
