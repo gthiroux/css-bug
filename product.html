@@ -34,11 +34,15 @@
         </ul>
 
         <div class="navbar__actions">
-          <a href="#" class="navbar__cart">
+           <a href="#" class="navbar__cart" aria-label="Panier">
             <ion-icon name="bag-handle-outline"></ion-icon>
             <span class="navbar__cart-badge">3</span>
           </a>
-          <button class="navbar__burger">
+          <button
+            class="navbar__burger"
+            aria-label="Menu Burger"
+            aria-expanded="false"
+          >
             <ion-icon name="menu-outline"></ion-icon>
           </button>
         </div>
@@ -54,7 +58,7 @@
           <!-- Galerie -->
           <div class="product-gallery">
             <div class="product-gallery__main">
-              <img
+              <img alt="image chaussure"
                 class="placeholder-img"
                 src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&h=800&fit=crop&q=80"
 
@@ -64,28 +68,28 @@
               <div
                 class="product-gallery__thumb product-gallery__thumb--active"
               >
-                <img
+                <img alt="image chaussure"
                   class="placeholder-img"
                   src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=200&h=200&fit=crop&q=80"
 
                 />
               </div>
               <div class="product-gallery__thumb">
-                <img
+                <img alt="image chaussure"
                   class="placeholder-img"
                   src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=200&h=200&fit=crop&q=80"
 
                 />
               </div>
               <div class="product-gallery__thumb">
-                <img
+                <img alt="image chaussure"
                   class="placeholder-img"
                   src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=200&h=200&fit=crop&q=80"
 
                 />
               </div>
               <div class="product-gallery__thumb">
-                <img
+                <img alt="image chaussure"
                   class="placeholder-img"
                   src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=200&h=200&fit=crop&q=80"
 
@@ -263,7 +267,7 @@
             <div class="review-card__header">
               <div class="review-card__author">
                 <div class="review-card__avatar">
-                  <img
+                  <img alt="avatar"
                     class="placeholder-img"
                     src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=96&h=96&fit=crop&crop=face&q=80"
 
@@ -300,7 +304,7 @@
             <div class="review-card__header">
               <div class="review-card__author">
                 <div class="review-card__avatar">
-                  <img
+                  <img alt="avatar"
                     class="placeholder-img"
                     src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&fit=crop&crop=face&q=80"
 
@@ -337,7 +341,7 @@
             <div class="review-card__header">
               <div class="review-card__author">
                 <div class="review-card__avatar">
-                  <img
+                  <img alt="avatar"
                     class="placeholder-img"
                     src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=96&h=96&fit=crop&crop=face&q=80"
 
@@ -385,7 +389,7 @@
         <div class="related__grid">
           <article class="product-card">
             <div class="product-card__image">
-              <img
+              <img alt="image chaussure"
                 class="placeholder-img"
                 src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=400&h=400&fit=crop&q=80"
 
@@ -409,7 +413,7 @@
 
           <article class="product-card">
             <div class="product-card__image">
-              <img
+              <img alt="image chaussure"
                 class="placeholder-img"
                 src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=400&h=400&fit=crop&q=80"
 
@@ -435,7 +439,7 @@
 
           <article class="product-card">
             <div class="product-card__image">
-              <img
+              <img alt="image chaussure"
                 class="placeholder-img"
                 src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=400&h=400&fit=crop&q=80"
 
@@ -462,7 +466,7 @@
 
           <article class="product-card">
             <div class="product-card__image">
-              <img
+              <img alt="image chaussure"
                 class="placeholder-img"
                 src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop&q=80"
 
@@ -562,17 +566,17 @@
           <div class="footer__col">
             <h4 class="footer__col-title">Suivez-nous</h4>
             <div class="footer__social">
-              <a href="#">
+             <a href="#" aria-label="instagram">
                 <ion-icon name="logo-instagram"></ion-icon>
               </a>
               <a href="#">
-                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-twitter" aria-label="twitter"></ion-icon>
               </a>
               <a href="#">
-                <ion-icon name="logo-tiktok"></ion-icon>
+                <ion-icon name="logo-tiktok" aria-label="tiktok"></ion-icon>
               </a>
               <a href="#">
-                <ion-icon name="logo-youtube"></ion-icon>
+                <ion-icon name="logo-youtube" aria-label="youtube"></ion-icon>
               </a>
             </div>
           </div>

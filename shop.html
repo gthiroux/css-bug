@@ -34,11 +34,15 @@
         </ul>
 
         <div class="navbar__actions">
-          <a href="#" class="navbar__cart">
+          <a href="#" class="navbar__cart" aria-label="Panier">
             <ion-icon name="bag-handle-outline"></ion-icon>
             <span class="navbar__cart-badge">3</span>
           </a>
-          <button class="navbar__burger">
+          <button
+            class="navbar__burger"
+            aria-label="Menu Burger"
+            aria-expanded="false"
+          >
             <ion-icon name="menu-outline"></ion-icon>
           </button>
         </div>
@@ -173,7 +177,9 @@
               </h3>
               <div class="product-card__price">
                 <span class="product-card__price-current">249&nbsp;&euro;</span>
-                <span class="product-card__price-old">299&nbsp;&euro;</span>
+                <span class="product-card__price-old" aria-label="ancien prix"
+                  >299&nbsp;&euro;</span
+                >
               </div>
               <button class="product-card__btn">
                 <ion-icon name="bag-add-outline"></ion-icon>
@@ -314,7 +320,9 @@
               </h3>
               <div class="product-card__price">
                 <span class="product-card__price-current">159&nbsp;&euro;</span>
-                <span class="product-card__price-old">189&nbsp;&euro;</span>
+                <span class="product-card__price-old" aria-label="ancien prix"
+                  >189&nbsp;&euro;</span
+                >
               </div>
               <button class="product-card__btn">
                 <ion-icon name="bag-add-outline"></ion-icon>
@@ -445,17 +453,17 @@
           <div class="footer__col">
             <h4 class="footer__col-title">Suivez-nous</h4>
             <div class="footer__social">
-              <a href="#">
+              <a href="#" aria-label="instagram">
                 <ion-icon name="logo-instagram"></ion-icon>
               </a>
               <a href="#">
-                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-twitter" aria-label="twitter"></ion-icon>
               </a>
               <a href="#">
-                <ion-icon name="logo-tiktok"></ion-icon>
+                <ion-icon name="logo-tiktok" aria-label="tiktok"></ion-icon>
               </a>
               <a href="#">
-                <ion-icon name="logo-youtube"></ion-icon>
+                <ion-icon name="logo-youtube" aria-label="youtube"></ion-icon>
               </a>
             </div>
           </div>
