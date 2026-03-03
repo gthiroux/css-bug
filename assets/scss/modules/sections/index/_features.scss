@@ -1,0 +1,70 @@
+// ============================================
+//  FEATURES — Pourquoi STEPFORGE
+// ============================================
+
+@use "../../../abstracts" as *;
+
+.features {
+  padding-block: $space-section;
+  background-color: $color-bg-elevated;
+  border-block: 1px solid $color-border;
+
+  &__header {
+    text-align: center;
+    margin-bottom: $space-3xl;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $space-2xl;
+
+    @include tablet {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+// ============================================
+//  FEATURE CARD
+// ============================================
+
+.feature-card {
+  text-align: center;
+  padding: $space-2xl $space-lg;
+
+  &__icon {
+    width: 72px;
+    height: 72px;
+    margin-inline: auto;
+    margin-bottom: $space-lg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 107, 53, 0.1);
+    border: 1px solid rgba(255, 107, 53, 0.2);
+    border-radius: $radius-lg;
+
+    ion-icon {
+      font-size: 1.75rem;
+      color: $color-accent;
+    }
+  }
+
+  &__title {
+    font-size: $fs-md;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $color-white;
+    margin-bottom: $space-sm;
+  }
+
+  &__text {
+    font-size: $fs-sm;
+    color: $color-text-muted;
+    line-height: 1.7;
+    max-width: 320px;
+    margin-inline: auto;
+  }
+}

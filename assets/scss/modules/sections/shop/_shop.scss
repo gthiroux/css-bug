@@ -1,0 +1,237 @@
+// ============================================
+//  SHOP — Hero bannière
+// ============================================
+
+@use "../../../abstracts" as *;
+
+.shop-hero {
+  padding-block: $space-4xl;
+  background-color: $color-bg-elevated;
+  border-bottom: 1px solid $color-border;
+  text-align: center;
+
+  &__label {
+    display: inline-block;
+    font-size: $fs-xs;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: $color-accent;
+    margin-bottom: $space-md;
+  }
+
+  &__title {
+    font-size: clamp(2rem, 5vw, $fs-3xl);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    line-height: 1.05;
+    color: $color-white;
+    margin-bottom: $space-md;
+
+    span {
+      color: $color-accent;
+    }
+  }
+
+  &__subtitle {
+    font-size: $fs-base;
+    color: $color-text-muted;
+    max-width: 500px;
+    margin-inline: auto;
+    line-height: 1.7;
+  }
+}
+
+// ============================================
+//  SHOP — Barre de filtres
+// ============================================
+
+.shop-filters {
+  padding-block: $space-xl;
+  border-bottom: 1px solid $color-border;
+  position: sticky;
+  top: $navbar-height;
+  z-index: 100;
+  background-color: $color-bg;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $space-lg;
+    flex-wrap: wrap;
+  }
+
+  &__groups {
+    display: flex;
+    align-items: center;
+    gap: $space-sm;
+    flex-wrap: wrap;
+  }
+
+  &__label {
+    font-size: $fs-xs;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: $color-text-muted;
+    margin-right: $space-xs;
+  }
+
+  &__btn {
+    padding: 0.4rem 1rem;
+    font-size: $fs-xs;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid $color-border;
+    border-radius: 2px;
+    color: $color-text-muted;
+    cursor: pointer;
+    transition:
+      color $transition-fast,
+      border-color $transition-fast,
+      background-color $transition-fast;
+
+    &:hover {
+      color: $color-white;
+      border-color: $color-white;
+    }
+
+    &--active {
+      background-color: $color-accent;
+      border-color: $color-accent;
+      color: $color-white;
+    }
+  }
+
+  &__sort {
+    display: flex;
+    align-items: center;
+    gap: $space-sm;
+  }
+
+  &__sort-label {
+    font-size: $fs-xs;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: $color-text-muted;
+    white-space: nowrap;
+  }
+
+  &__select {
+    padding: 0.4rem 1rem;
+    background-color: $color-bg-elevated;
+    border: 1px solid $color-border;
+    border-radius: 2px;
+    color: $color-text;
+    font-size: $fs-xs;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: border-color $transition-fast;
+
+    &:focus {
+      border-color: $color-accent;
+      outline: none;
+    }
+  }
+
+  &__count {
+    font-size: $fs-xs;
+    color: $color-text-muted;
+    white-space: nowrap;
+  }
+}
+
+// ============================================
+//  SHOP — Catalogue
+// ============================================
+
+.shop-catalog {
+  padding-block: $space-section;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $space-lg;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include desktop {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__empty {
+    text-align: center;
+    padding-block: $space-4xl;
+    color: $color-text-muted;
+
+    ion-icon {
+      font-size: 3rem;
+      margin-bottom: $space-lg;
+      display: block;
+      color: $color-border;
+    }
+
+    p {
+      font-size: $fs-md;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+// ============================================
+//  SHOP — Pagination
+// ============================================
+
+.shop-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $space-xs;
+  padding-top: $space-3xl;
+  border-top: 1px solid $color-border;
+  margin-top: $space-3xl;
+
+  &__btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $color-border;
+    border-radius: 2px;
+    color: $color-text-muted;
+    font-size: $fs-xs;
+    font-weight: 700;
+    cursor: pointer;
+    transition:
+      color $transition-fast,
+      border-color $transition-fast,
+      background-color $transition-fast;
+
+    &:hover {
+      color: $color-white;
+      border-color: $color-white;
+    }
+
+    &--active {
+      background-color: $color-accent;
+      border-color: $color-accent;
+      color: $color-white;
+    }
+
+    &--arrow {
+      font-size: 1.1rem;
+    }
+  }
+}

@@ -1,0 +1,594 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STEPFORGE — Phantom Runner X</title>
+
+    <!-- Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/pages/product.css" />
+  </head>
+  <body>
+    <!-- ==========================================
+       NAVBAR
+    =========================================== -->
+    <nav class="navbar" id="haut">
+      <div class="container">
+        <a href="index.html" class="navbar__logo">STEP<span>FORGE</span></a>
+
+        <ul class="navbar__links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="shop.html">Collection</a></li>
+          <li><a href="index.html#a-propos">&Agrave; propos</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+
+        <div class="navbar__actions">
+          <a href="#" class="navbar__cart">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <span class="navbar__cart-badge">3</span>
+          </a>
+          <button class="navbar__burger">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ==========================================
+       PRODUCT DETAIL
+    =========================================== -->
+    <section class="product-detail">
+      <div class="container">
+        <div class="product-detail__inner">
+          <!-- Galerie -->
+          <div class="product-gallery">
+            <div class="product-gallery__main">
+              <img
+                class="placeholder-img"
+                src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&h=800&fit=crop&q=80"
+
+              />
+            </div>
+            <div class="product-gallery__thumbs">
+              <div
+                class="product-gallery__thumb product-gallery__thumb--active"
+              >
+                <img
+                  class="placeholder-img"
+                  src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=200&h=200&fit=crop&q=80"
+
+                />
+              </div>
+              <div class="product-gallery__thumb">
+                <img
+                  class="placeholder-img"
+                  src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=200&h=200&fit=crop&q=80"
+
+                />
+              </div>
+              <div class="product-gallery__thumb">
+                <img
+                  class="placeholder-img"
+                  src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=200&h=200&fit=crop&q=80"
+
+                />
+              </div>
+              <div class="product-gallery__thumb">
+                <img
+                  class="placeholder-img"
+                  src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=200&h=200&fit=crop&q=80"
+
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Infos produit -->
+          <div class="product-info">
+            <p class="product-info__brand">Stepforge</p>
+            <h1 class="product-info__name">Phantom Runner X</h1>
+
+            <div class="product-info__rating">
+              <div class="product-info__stars">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-half-outline"></ion-icon>
+              </div>
+              <span class="product-info__rating-count"
+                >4,6 &mdash; 128 avis</span
+              >
+            </div>
+
+            <div class="product-info__price-block">
+              <span class="product-info__price-current">189&nbsp;&euro;</span>
+              <span class="product-info__price-old">229&nbsp;&euro;</span>
+              <span class="product-info__price-badge">&minus;18%</span>
+            </div>
+
+            <p class="product-info__desc">
+              Con&ccedil;ue pour la rue. La Phantom Runner X combine une tige
+              l&eacute;g&egrave;re en mesh avec notre technologie d'amorti
+              ForgeStep pour un confort toute la journ&eacute;e, sans compromis
+              sur le style.
+            </p>
+
+            <!-- Sélecteur de taille -->
+            <div class="size-selector">
+              <div class="size-selector__label">
+                <span>Taille</span>
+                <a href="#">Guide des tailles</a>
+              </div>
+              <div class="size-selector__grid">
+                <button
+                  class="size-selector__btn size-selector__btn--unavailable"
+                  disabled
+                >
+                  36
+                </button>
+                <button class="size-selector__btn">37</button>
+                <button class="size-selector__btn">38</button>
+                <button class="size-selector__btn size-selector__btn--active">
+                  39
+                </button>
+                <button class="size-selector__btn">40</button>
+                <button class="size-selector__btn">41</button>
+                <button class="size-selector__btn">42</button>
+                <button
+                  class="size-selector__btn size-selector__btn--unavailable"
+                  disabled
+                >
+                  43
+                </button>
+                <button class="size-selector__btn">44</button>
+                <button class="size-selector__btn">45</button>
+              </div>
+            </div>
+
+            <!-- Actions -->
+            <div class="product-actions">
+              <button class="btn btn--primary">
+                <ion-icon name="bag-add-outline"></ion-icon>
+                Ajouter au panier
+              </button>
+              <button class="product-actions__wishlist">
+                <ion-icon name="heart-outline"></ion-icon>
+                Ajouter aux favoris
+              </button>
+            </div>
+
+            <!-- Méta (livraison, retours) -->
+            <div class="product-meta">
+              <div class="product-meta__item">
+                <ion-icon name="rocket-outline"></ion-icon>
+                <p class="product-meta__text">
+                  <strong>Livraison gratuite</strong> — Recevez votre commande
+                  sous 48h partout en Europe.
+                </p>
+              </div>
+              <div class="product-meta__item">
+                <ion-icon name="refresh-outline"></ion-icon>
+                <p class="product-meta__text">
+                  <strong>Retours gratuits</strong> — 30 jours pour changer
+                  d'avis, sans condition.
+                </p>
+              </div>
+              <div class="product-meta__item">
+                <ion-icon name="shield-checkmark-outline"></ion-icon>
+                <p class="product-meta__text">
+                  <strong>100% Authentique</strong> — Chaque paire est
+                  v&eacute;rifi&eacute;e par notre &eacute;quipe d'experts.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+       AVIS CLIENTS
+    =========================================== -->
+    <section class="reviews">
+      <div class="container">
+        <div class="reviews__header">
+          <span class="section-label">T&eacute;moignages</span>
+          <h2 class="section-title">Avis clients</h2>
+        </div>
+
+        <!-- Résumé des avis -->
+        <div class="reviews__summary">
+          <div class="reviews__score">
+            <span class="reviews__score-number">4,6</span>
+            <div class="reviews__score-stars">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-half-outline"></ion-icon>
+            </div>
+            <span class="reviews__score-count">128 avis</span>
+          </div>
+
+          <div class="reviews__bars">
+            <div class="reviews__bar-row">
+              <span class="reviews__bar-label">5</span>
+              <div class="reviews__bar-track">
+                <div class="reviews__bar-fill" style="width: 68%"></div>
+              </div>
+            </div>
+            <div class="reviews__bar-row">
+              <span class="reviews__bar-label">4</span>
+              <div class="reviews__bar-track">
+                <div class="reviews__bar-fill" style="width: 20%"></div>
+              </div>
+            </div>
+            <div class="reviews__bar-row">
+              <span class="reviews__bar-label">3</span>
+              <div class="reviews__bar-track">
+                <div class="reviews__bar-fill" style="width: 7%"></div>
+              </div>
+            </div>
+            <div class="reviews__bar-row">
+              <span class="reviews__bar-label">2</span>
+              <div class="reviews__bar-track">
+                <div class="reviews__bar-fill" style="width: 3%"></div>
+              </div>
+            </div>
+            <div class="reviews__bar-row">
+              <span class="reviews__bar-label">1</span>
+              <div class="reviews__bar-track">
+                <div class="reviews__bar-fill" style="width: 2%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grille des avis -->
+        <div class="reviews__grid">
+          <!-- Avis 1 -->
+          <article class="review-card">
+            <div class="review-card__header">
+              <div class="review-card__author">
+                <div class="review-card__avatar">
+                  <img
+                    class="placeholder-img"
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=96&h=96&fit=crop&crop=face&q=80"
+
+                  />
+                </div>
+                <div>
+                  <p class="review-card__name">Lucas Moreau</p>
+                  <p class="review-card__date">12 janvier 2026</p>
+                </div>
+              </div>
+              <div class="review-card__stars">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+            </div>
+            <p class="review-card__title">Parfaites au quotidien</p>
+            <p class="review-card__body">
+              Je les porte tous les jours depuis trois semaines, aucun signe
+              d'usure. Le confort est exceptionnel, m&ecirc;me apr&egrave;s de
+              longues journ&eacute;es debout. Le design est
+              in&eacute;gal&eacute; pour ce prix.
+            </p>
+            <p class="review-card__verified">
+              <ion-icon name="checkmark-circle-outline"></ion-icon>
+              Acheteur v&eacute;rifi&eacute;
+            </p>
+          </article>
+
+          <!-- Avis 2 -->
+          <article class="review-card">
+            <div class="review-card__header">
+              <div class="review-card__author">
+                <div class="review-card__avatar">
+                  <img
+                    class="placeholder-img"
+                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&fit=crop&crop=face&q=80"
+
+                  />
+                </div>
+                <div>
+                  <p class="review-card__name">Amira Benali</p>
+                  <p class="review-card__date">4 f&eacute;vrier 2026</p>
+                </div>
+              </div>
+              <div class="review-card__stars">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+              </div>
+            </div>
+            <p class="review-card__title">Tr&egrave;s beau mod&egrave;le</p>
+            <p class="review-card__body">
+              La chaussure est magnifique et correspond exactement aux photos.
+              J'ai enlev&eacute; une &eacute;toile car la taille chausse un peu
+              grand &mdash; je recommande de prendre une demi-taille en dessous.
+              Sinon, qualit&eacute; top.
+            </p>
+            <p class="review-card__verified">
+              <ion-icon name="checkmark-circle-outline"></ion-icon>
+              Acheteuse v&eacute;rifi&eacute;e
+            </p>
+          </article>
+
+          <!-- Avis 3 -->
+          <article class="review-card">
+            <div class="review-card__header">
+              <div class="review-card__author">
+                <div class="review-card__avatar">
+                  <img
+                    class="placeholder-img"
+                    src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=96&h=96&fit=crop&crop=face&q=80"
+
+                  />
+                </div>
+                <div>
+                  <p class="review-card__name">Thomas Eriksen</p>
+                  <p class="review-card__date">21 f&eacute;vrier 2026</p>
+                </div>
+              </div>
+              <div class="review-card__stars">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+            </div>
+            <p class="review-card__title">La meilleure paire que j'aie</p>
+            <p class="review-card__body">
+              &Ccedil;a fait deux ans que je cherchais LA sneaker parfaite pour
+              aller au bureau et sortir le week-end. C'est celle-l&agrave;.
+              L'amorti ForgeStep est vraiment efficace, et le mesh respire super
+              bien en &eacute;t&eacute;.
+            </p>
+            <p class="review-card__verified">
+              <ion-icon name="checkmark-circle-outline"></ion-icon>
+              Acheteur v&eacute;rifi&eacute;
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+       PRODUITS LIÉS
+    =========================================== -->
+    <section class="related">
+      <div class="container">
+        <div class="related__header">
+          <span class="section-label">Vous aimerez aussi</span>
+          <h2 class="section-title">Produits similaires</h2>
+        </div>
+
+        <div class="related__grid">
+          <article class="product-card">
+            <div class="product-card__image">
+              <img
+                class="placeholder-img"
+                src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=400&h=400&fit=crop&q=80"
+
+              />
+              <button class="product-card__wishlist">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__brand">Stepforge</span>
+              <h3 class="product-card__name">Urban Drift Pro</h3>
+              <div class="product-card__price">
+                <span class="product-card__price-current">219&nbsp;&euro;</span>
+              </div>
+              <button class="product-card__btn">
+                <ion-icon name="bag-add-outline"></ion-icon>
+                Ajouter au panier
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__image">
+              <img
+                class="placeholder-img"
+                src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=400&h=400&fit=crop&q=80"
+
+              />
+              <span class="product-card__tag">Tendance</span>
+              <button class="product-card__wishlist">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__brand">Stepforge</span>
+              <h3 class="product-card__name">Blaze High OG</h3>
+              <div class="product-card__price">
+                <span class="product-card__price-current">249&nbsp;&euro;</span>
+                <span class="product-card__price-old">299&nbsp;&euro;</span>
+              </div>
+              <button class="product-card__btn">
+                <ion-icon name="bag-add-outline"></ion-icon>
+                Ajouter au panier
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__image">
+              <img
+                class="placeholder-img"
+                src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=400&h=400&fit=crop&q=80"
+
+              />
+              <span class="product-card__tag"
+                >&Eacute;dition limit&eacute;e</span
+              >
+              <button class="product-card__wishlist">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__brand">Stepforge</span>
+              <h3 class="product-card__name">Forge One Retro</h3>
+              <div class="product-card__price">
+                <span class="product-card__price-current">279&nbsp;&euro;</span>
+              </div>
+              <button class="product-card__btn">
+                <ion-icon name="bag-add-outline"></ion-icon>
+                Ajouter au panier
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__image">
+              <img
+                class="placeholder-img"
+                src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop&q=80"
+
+              />
+              <button class="product-card__wishlist">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__brand">Stepforge</span>
+              <h3 class="product-card__name">Stealth Low V2</h3>
+              <div class="product-card__price">
+                <span class="product-card__price-current">169&nbsp;&euro;</span>
+              </div>
+              <button class="product-card__btn">
+                <ion-icon name="bag-add-outline"></ion-icon>
+                Ajouter au panier
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+       NEWSLETTER
+    =========================================== -->
+    <section class="newsletter" id="contact">
+      <div class="container">
+        <div class="newsletter__inner">
+          <span class="section-label">Restez inform&eacute;</span>
+          <h2 class="newsletter__title">
+            Acc&egrave;s anticip&eacute; &amp; drops exclusifs
+          </h2>
+          <p class="newsletter__text">
+            Rejoignez plus de 20&nbsp;000 passionn&eacute;s de sneakers. Soyez
+            les premiers inform&eacute;s des nouvelles sorties, restocks et
+            offres r&eacute;serv&eacute;es aux membres.
+          </p>
+          <form class="newsletter__form" action="#" method="post">
+            <input
+              class="newsletter__input"
+              placeholder="Entrez votre adresse email"
+              required
+            />
+            <buttonclass="btn btn--primary newsletter__btn">
+              S'inscrire
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+          </form>
+          <p class="newsletter__disclaimer">
+            Pas de spam, d&eacute;sinscription &agrave; tout moment. Nous
+            respectons votre vie priv&eacute;e.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+       FOOTER
+    =========================================== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__col">
+            <h4 class="footer__col-title">Boutique</h4>
+            <ul class="footer__links">
+              <li><a href="#">Nouveaut&eacute;s</a></li>
+              <li><a href="#">Meilleures ventes</a></li>
+              <li><a href="#">Homme</a></li>
+              <li><a href="#">Femme</a></li>
+              <li><a href="#">Promotions</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <h4 class="footer__col-title">Aide</h4>
+            <ul class="footer__links">
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Infos livraison</a></li>
+              <li><a href="#">Retours &amp; &eacute;changes</a></li>
+              <li><a href="#">Guide des tailles</a></li>
+              <li><a href="#">Nous contacter</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <h4 class="footer__col-title">L&eacute;gal</h4>
+            <ul class="footer__links">
+              <li><a href="#">Politique de confidentialit&eacute;</a></li>
+              <li><a href="#">Conditions g&eacute;n&eacute;rales</a></li>
+              <li><a href="#">Politique de cookies</a></li>
+              <li><a href="#">Accessibilit&eacute;</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <h4 class="footer__col-title">Suivez-nous</h4>
+            <div class="footer__social">
+              <a href="#">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+              <a href="#">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+              <a href="#">
+                <ion-icon name="logo-tiktok"></ion-icon>
+              </a>
+              <a href="#">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p class="footer__copyright">
+            &copy; 2026 STEPFORGE. Tous droits r&eacute;serv&eacute;s.
+          </p>
+          <div class="footer__bottom-links">
+            <a href="#">Confidentialit&eacute;</a>
+            <a href="#">CGV</a>
+            <a href="#">Cookies</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+// ============================================
+//  COLLECTION
+// ============================================
+
+@use "../../../abstracts" as *;
+
+.collection {
+  padding-block: $space-section;
+
+  &__header {
+    text-align: center;
+    margin-bottom: $space-3xl;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $space-lg;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include desktop {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+// ============================================
+//  PRODUCT CARD
+// ============================================
+
+.product-card {
+  background-color: $color-bg-elevated;
+  border: 1px solid $color-border;
+  border-radius: $radius-md;
+  overflow: hidden;
+  transition:
+    transform $transition-base,
+    border-color $transition-base,
+    box-shadow $transition-base;
+
+  &:hover {
+    transform: translateY(-8px);
+    border-color: $color-accent;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  }
+
+  &__image {
+    aspect-ratio: 1;
+    position: relative;
+    overflow: hidden;
+    background-color: $color-surface-alt;
+
+    .placeholder-img {
+      transition: transform $transition-base;
+    }
+  }
+
+  &:hover &__image .placeholder-img {
+    transform: scale(1.05);
+  }
+
+  &__tag {
+    position: absolute;
+    top: $space-sm;
+    left: $space-sm;
+    padding: 0.25rem 0.75rem;
+    background-color: $color-accent;
+    color: $color-white;
+    font-size: $fs-xs;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    z-index: 1;
+  }
+
+  &__wishlist {
+    position: absolute;
+    top: $space-sm;
+    right: $space-sm;
+    width: 36px;
+    height: 36px;
+    background-color: rgba(10, 10, 10, 0.6);
+    border-radius: $radius-full;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color-text-muted;
+    cursor: pointer;
+    transition:
+      color $transition-fast,
+      background-color $transition-fast;
+    z-index: 1;
+
+    &:hover {
+      color: $color-accent;
+      background-color: rgba(10, 10, 10, 0.8);
+    }
+  }
+
+  &__body {
+    padding: $space-lg;
+  }
+
+  &__brand {
+    font-size: $fs-xs;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: $color-accent;
+    margin-bottom: $space-xs;
+  }
+
+  &__name {
+    font-size: $fs-md;
+    font-weight: 700;
+    color: $color-white;
+    margin-bottom: $space-sm;
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    gap: $space-xs;
+    margin-bottom: $space-md;
+  }
+
+  &__price-current {
+    font-size: $fs-lg;
+    font-weight: 800;
+    color: $color-white;
+  }
+
+  &__price-old {
+    font-size: $fs-sm;
+    color: $color-text-muted;
+    text-decoration: line-through;
+  }
+
+  &__btn {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: transparent;
+    border: 1px solid $color-border;
+    color: $color-text;
+    font-size: $fs-xs;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: $radius-sm;
+    cursor: pointer;
+    transition:
+      background-color $transition-fast,
+      border-color $transition-fast,
+      color $transition-fast;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: $space-xs;
+
+    &:hover {
+      background-color: $color-accent;
+      border-color: $color-accent;
+      color: $color-white;
+    }
+  }
+}

@@ -1,0 +1,130 @@
+// ============================================
+//  FOOTER
+// ============================================
+
+@use "../../abstracts" as *;
+
+.footer {
+  padding-top: $space-3xl;
+  padding-bottom: $space-xl;
+  border-top: 1px solid $color-border;
+  background-color: $color-bg-elevated;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $space-2xl;
+    margin-bottom: $space-3xl;
+  }
+
+  &__col-title {
+    font-size: $fs-xs;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: $color-white;
+    margin-bottom: $space-lg;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: $space-sm;
+
+    a {
+      font-size: $fs-sm;
+      color: $color-text-muted;
+      transition: color $transition-fast;
+
+      &:hover {
+        color: $color-accent;
+      }
+    }
+  }
+
+  &__social {
+    display: flex;
+    gap: $space-md;
+
+    a {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid $color-border;
+      border-radius: $radius-full;
+      color: $color-text-muted;
+      font-size: 1.2rem;
+      transition:
+        color $transition-fast,
+        border-color $transition-fast,
+        background-color $transition-fast;
+
+      &:hover {
+        color: $color-accent;
+        border-color: $color-accent;
+        background-color: rgba(255, 107, 53, 0.08);
+      }
+    }
+  }
+
+  &__bottom {
+    padding-top: $space-xl;
+    border-top: 1px solid $color-border;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $space-sm;
+    text-align: center;
+  }
+
+  &__copyright {
+    font-size: $fs-xs;
+    color: $color-text-muted;
+  }
+
+  &__bottom-links {
+    display: flex;
+    gap: $space-lg;
+
+    a {
+      font-size: $fs-xs;
+      color: $color-text-muted;
+      transition: color $transition-fast;
+
+      &:hover {
+        color: $color-accent;
+      }
+    }
+  }
+}
+
+// ============================================
+//  RESPONSIVE — TABLET (768px)
+// ============================================
+
+@include tablet {
+  .footer {
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__bottom {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
+
+// ============================================
+//  RESPONSIVE — DESKTOP (1200px)
+// ============================================
+
+@include desktop {
+  .footer {
+    &__grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}

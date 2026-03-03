@@ -1,0 +1,130 @@
+// ============================================
+//  NAVBAR
+// ============================================
+
+@use "../../abstracts" as *;
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: $navbar-height;
+  background-color: rgba(10, 10, 10, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid $color-border;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &__logo {
+    font-size: $fs-lg;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: $color-white;
+    flex-shrink: 0;
+
+    span {
+      color: $color-accent;
+    }
+  }
+
+  &__links {
+    display: none;
+    gap: $space-2xl;
+
+    a {
+      font-size: $fs-xs;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: $color-text-muted;
+      transition: color $transition-fast;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: $color-accent;
+        transition: width $transition-base;
+      }
+
+      &:hover {
+        color: $color-white;
+
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: $space-md;
+
+    a,
+    button {
+      color: $color-text-muted;
+      font-size: 1.4rem;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      transition: color $transition-fast;
+
+      &:hover {
+        color: $color-white;
+      }
+    }
+  }
+
+  &__cart {
+    position: relative;
+  }
+
+  &__cart-badge {
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    width: 18px;
+    height: 18px;
+    background-color: $color-accent;
+    color: $color-white;
+    font-size: 0.65rem;
+    font-weight: 700;
+    border-radius: $radius-full;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__burger {
+    display: flex;
+  }
+}
+
+// ============================================
+//  RESPONSIVE — TABLET (768px)
+// ============================================
+
+@include tablet {
+  .navbar {
+    &__links {
+      display: flex;
+    }
+
+    &__burger {
+      display: none;
+    }
+  }
+}

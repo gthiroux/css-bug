@@ -1,0 +1,476 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STEPFORGE — Boutique</title>
+
+    <!-- Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link rel="stylesheet" href="assets/css/pages/shop.css" />
+  </head>
+  <body>
+    <!-- ==========================================
+       NAVBAR
+    =========================================== -->
+    <nav class="navbar" id="haut">
+      <div class="container">
+        <a href="index.html" class="navbar__logo">STEP<span>FORGE</span></a>
+
+        <ul class="navbar__links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="shop.html">Boutique</a></li>
+          <li><a href="index.html#a-propos">&Agrave; propos</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+
+        <div class="navbar__actions">
+          <a href="#" class="navbar__cart">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <span class="navbar__cart-badge">3</span>
+          </a>
+          <button class="navbar__burger">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ==========================================
+       SHOP HERO
+    =========================================== -->
+    <section class="shop-hero">
+      <div class="container">
+        <span class="shop-hero__label">Toute la collection</span>
+        <h1 class="shop-hero__title">Nos <span>Sneakers</span></h1>
+        <p class="shop-hero__subtitle">
+          Explorez notre s&eacute;lection compl&egrave;te de sneakers premium.
+          Des mod&egrave;les pour chaque style, chaque occasion.
+        </p>
+      </div>
+    </section>
+
+    <!-- ==========================================
+       FILTRES
+    =========================================== -->
+    <div class="shop-filters">
+      <div class="container">
+        <div class="shop-filters__inner">
+          <div class="shop-filters__groups">
+            <span class="shop-filters__label">Filtrer&nbsp;:</span>
+            <button class="shop-filters__btn shop-filters__btn--active">
+              Tous
+            </button>
+            <button class="shop-filters__btn">Nouveau</button>
+            <button class="shop-filters__btn">Tendance</button>
+            <button class="shop-filters__btn">
+              &Eacute;dition limit&eacute;e
+            </button>
+            <button class="shop-filters__btn">Promo</button>
+          </div>
+
+          <div class="shop-filters__sort">
+            <span class="shop-filters__sort-label">Trier&nbsp;:</span>
+            <select class="shop-filters__select">
+              <option value="newest">Plus r&eacute;cents</option>
+              <option value="price-asc">Prix croissant</option>
+              <option value="price-desc">Prix d&eacute;croissant</option>
+              <option value="popular">Popularit&eacute;</option>
+            </select>
+            <span class="shop-filters__count">18 produits</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================
+       CATALOGUE
+    =========================================== -->
+    <section class="shop-catalog">
+      <div class="container">
+        <div class="shop-catalog__grid">
+          <!-- Produit 1 -->
+          <article class="product-card">
+            <a href="product.html" class="product-card__image">
+              <img
+                class="placeholder-img"
+                src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=400&fit=crop&q=80"
+                alt="Phantom Runner X"
+              />
+              <span class="product-card__tag">Nouveau</span>
+              <button class="product-card__wishlist">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+            </a>
+            <div class="product-card__body">
+              <span class="product-card__brand">Stepforge</span>
+              <h3 class="product-card__name">
+                <a href="product.html">Phantom Runner X</a>
+              </h3>
+              <div class="product-card__price">
+                <span class="product-card__price-current">189&nbsp;&euro;</span>
+              </div>
+              <button class="product-card__btn">
+                <ion-icon name="bag-add-outline"></ion-icon>
+                Ajouter au panier
+              </button>
+            </div>
+          </article>
+
+          <!-- Produit 2 -->
+          <article class="product-card">
+            <a href="product.html" class="product-card__image">
+              <img
+                class="placeholder-img"
+                src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=400&h=400&fit=crop&q=80"
+                alt="Urban Drift Pro"
+              />
+              <button class="product-card__wishlist">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+            </a>
+            <div class="product-card__body">
+              <span class="product-card__brand">Stepforge</span>
+              <h3 class="product-card__name">
+                <a href="product.html">Urban Drift Pro</a>
+              </h3>
+              <div class="product-card__price">
+                <span class="product-card__price-current">219&nbsp;&euro;</span>
+              </div>
+              <button class="product-card__btn">
+                <ion-icon name="bag-add-outline"></ion-icon>
+                Ajouter au panier
+              </button>
+            </div>
+          </article>
+
+          <!-- Produit 3 -->
+          <article class="product-card">
+            <a href="product.html" class="product-card__image">
+              <img
+                class="placeholder-img"
+                src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=400&h=400&fit=crop&q=80"
+                alt="Blaze High OG"
+              />
+              <span class="product-card__tag">Tendance</span>
+              <button class="product-card__wishlist">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+            </a>
+            <div class="product-card__body">
+              <span class="product-card__brand">Stepforge</span>
+              <h3 class="product-card__name">
+                <a href="product.html">Blaze High OG</a>
+              </h3>
+              <div class="product-card__price">
+                <span class="product-card__price-current">249&nbsp;&euro;</span>
+                <span class="product-card__price-old">299&nbsp;&euro;</span>
+              </div>
+              <button class="product-card__btn">
+                <ion-icon name="bag-add-outline"></ion-icon>
+                Ajouter au panier
+              </button>
+            </div>
+          </article>
+
+          <!-- Produit 4 -->
+          <article class="product-card">
+            <a href="product.html" class="product-card__image">
+              <img
+                class="placeholder-img"
+                src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop&q=80"
+                alt="Stealth Low V2"
+              />
+              <button class="product-card__wishlist">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+            </a>
+            <div class="product-card__body">
+              <span class="product-card__brand">Stepforge</span>
+              <h3 class="product-card__name">
+                <a href="product.html">Stealth Low V2</a>
+              </h3>
+              <div class="product-card__price">
+                <span class="product-card__price-current">169&nbsp;&euro;</span>
+              </div>
+              <button class="product-card__btn">
+                <ion-icon name="bag-add-outline"></ion-icon>
+                Ajouter au panier
+              </button>
+            </div>
+          </article>
+
+          <!-- Produit 5 -->
+          <article class="product-card">
+            <a href="product.html" class="product-card__image">
+              <img
+                class="placeholder-img"
+                src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=400&h=400&fit=crop&q=80"
+                alt="Forge One Retro"
+              />
+              <span class="product-card__tag"
+                >&Eacute;dition limit&eacute;e</span
+              >
+              <button class="product-card__wishlist">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+            </a>
+            <div class="product-card__body">
+              <span class="product-card__brand">Stepforge</span>
+              <h3 class="product-card__name">
+                <a href="product.html">Forge One Retro</a>
+              </h3>
+              <div class="product-card__price">
+                <span class="product-card__price-current">279&nbsp;&euro;</span>
+              </div>
+              <button class="product-card__btn">
+                <ion-icon name="bag-add-outline"></ion-icon>
+                Ajouter au panier
+              </button>
+            </div>
+          </article>
+
+          <!-- Produit 6 -->
+          <article class="product-card">
+            <a href="product.html" class="product-card__image">
+              <img
+                class="placeholder-img"
+                src="https://images.unsplash.com/photo-1600269452121-4f2416e55c28?w=400&h=400&fit=crop&q=80"
+                alt="Volt Street Max"
+              />
+              <button class="product-card__wishlist">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+            </a>
+            <div class="product-card__body">
+              <span class="product-card__brand">Stepforge</span>
+              <h3 class="product-card__name">
+                <a href="product.html">Volt Street Max</a>
+              </h3>
+              <div class="product-card__price">
+                <span class="product-card__price-current">199&nbsp;&euro;</span>
+                <span class="product-card__price-old">239&nbsp;&euro;</span>
+              </div>
+              <button class="product-card__btn">
+                <ion-icon name="bag-add-outline"></ion-icon>
+                Ajouter au panier
+              </button>
+            </div>
+          </article>
+
+          <!-- Produit 7 -->
+          <article class="product-card">
+            <a href="product.html" class="product-card__image">
+              <img
+                class="placeholder-img"
+                src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=400&fit=crop&q=80"
+                alt="Apex Trail Zero"
+              />
+              <span class="product-card__tag">Nouveau</span>
+              <button class="product-card__wishlist">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+            </a>
+            <div class="product-card__body">
+              <span class="product-card__brand">Stepforge</span>
+              <h3 class="product-card__name">
+                <a href="product.html">Apex Trail Zero</a>
+              </h3>
+              <div class="product-card__price">
+                <span class="product-card__price-current">229&nbsp;&euro;</span>
+              </div>
+              <button class="product-card__btn">
+                <ion-icon name="bag-add-outline"></ion-icon>
+                Ajouter au panier
+              </button>
+            </div>
+          </article>
+
+          <!-- Produit 8 -->
+          <article class="product-card">
+            <a href="product.html" class="product-card__image">
+              <img
+                class="placeholder-img"
+                src="https://images.unsplash.com/photo-1539185441755-769473a23570?w=400&h=400&fit=crop&q=80"
+                alt="Neon Pulse Low"
+              />
+              <button class="product-card__wishlist">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+            </a>
+            <div class="product-card__body">
+              <span class="product-card__brand">Stepforge</span>
+              <h3 class="product-card__name">
+                <a href="product.html">Neon Pulse Low</a>
+              </h3>
+              <div class="product-card__price">
+                <span class="product-card__price-current">159&nbsp;&euro;</span>
+                <span class="product-card__price-old">189&nbsp;&euro;</span>
+              </div>
+              <button class="product-card__btn">
+                <ion-icon name="bag-add-outline"></ion-icon>
+                Ajouter au panier
+              </button>
+            </div>
+          </article>
+
+          <!-- Produit 9 -->
+          <article class="product-card">
+            <a href="product.html" class="product-card__image">
+              <img
+                class="placeholder-img"
+                src="https://images.unsplash.com/photo-1556906781-9a412961a28f?w=400&h=400&fit=crop&q=80"
+                alt="Core Classic Mid"
+              />
+              <span class="product-card__tag">Tendance</span>
+              <button class="product-card__wishlist">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+            </a>
+            <div class="product-card__body">
+              <span class="product-card__brand">Stepforge</span>
+              <h3 class="product-card__name">
+                <a href="product.html">Core Classic Mid</a>
+              </h3>
+              <div class="product-card__price">
+                <span class="product-card__price-current">209&nbsp;&euro;</span>
+              </div>
+              <button class="product-card__btn">
+                <ion-icon name="bag-add-outline"></ion-icon>
+                Ajouter au panier
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <!-- Pagination -->
+        <nav class="shop-pagination">
+          <button class="shop-pagination__btn shop-pagination__btn--arrow">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </button>
+          <button class="shop-pagination__btn shop-pagination__btn--active">
+            1
+          </button>
+          <button class="shop-pagination__btn">2</button>
+          <button class="shop-pagination__btn">3</button>
+          <button class="shop-pagination__btn shop-pagination__btn--arrow">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </button>
+        </nav>
+      </div>
+    </section>
+
+    <!-- ==========================================
+       NEWSLETTER
+    =========================================== -->
+    <section class="newsletter" id="contact">
+      <div class="container">
+        <div class="newsletter__inner">
+          <span class="section-label">Restez inform&eacute;</span>
+          <h2 class="newsletter__title">
+            Acc&egrave;s anticip&eacute; &amp; drops exclusifs
+          </h2>
+          <p class="newsletter__text">
+            Rejoignez plus de 20&nbsp;000 passionn&eacute;s de sneakers. Soyez
+            les premiers inform&eacute;s des nouvelles sorties, restocks et
+            offres r&eacute;serv&eacute;es aux membres.
+          </p>
+          <form class="newsletter__form" action="#" method="post">
+            <input
+              type="email"
+              class="newsletter__input"
+              placeholder="Entrez votre adresse email"
+              required
+            />
+            <button type="submit" class="btn btn--primary newsletter__btn">
+              S'inscrire
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+          </form>
+          <p class="newsletter__disclaimer">
+            Pas de spam, d&eacute;sinscription &agrave; tout moment. Nous
+            respectons votre vie priv&eacute;e.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+       FOOTER
+    =========================================== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__col">
+            <h4 class="footer__col-title">Boutique</h4>
+            <ul class="footer__links">
+              <li><a href="#">Nouveaut&eacute;s</a></li>
+              <li><a href="#">Meilleures ventes</a></li>
+              <li><a href="#">Homme</a></li>
+              <li><a href="#">Femme</a></li>
+              <li><a href="#">Promotions</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <h4 class="footer__col-title">Aide</h4>
+            <ul class="footer__links">
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Infos livraison</a></li>
+              <li><a href="#">Retours &amp; &eacute;changes</a></li>
+              <li><a href="#">Guide des tailles</a></li>
+              <li><a href="#">Nous contacter</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <h4 class="footer__col-title">L&eacute;gal</h4>
+            <ul class="footer__links">
+              <li><a href="#">Politique de confidentialit&eacute;</a></li>
+              <li><a href="#">Conditions g&eacute;n&eacute;rales</a></li>
+              <li><a href="#">Politique de cookies</a></li>
+              <li><a href="#">Accessibilit&eacute;</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <h4 class="footer__col-title">Suivez-nous</h4>
+            <div class="footer__social">
+              <a href="#">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+              <a href="#">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+              <a href="#">
+                <ion-icon name="logo-tiktok"></ion-icon>
+              </a>
+              <a href="#">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p class="footer__copyright">
+            &copy; 2026 STEPFORGE. Tous droits r&eacute;serv&eacute;s.
+          </p>
+          <div class="footer__bottom-links">
+            <a href="#">Confidentialit&eacute;</a>
+            <a href="#">CGV</a>
+            <a href="#">Cookies</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

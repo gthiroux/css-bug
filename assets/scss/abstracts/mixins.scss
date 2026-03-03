@@ -1,0 +1,17 @@
+// ============================================
+//  MIXINS
+// ============================================
+
+/// Breakpoint tablet (>= 768px)
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+/// Breakpoint desktop (>= 1200px)
+@mixin desktp {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}

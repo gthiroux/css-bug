@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "build": "sass --wach asset/scss:assets/css"
+  },
+  "dependencies": {
+    "sass": "^1.97.3"
+  }
+}

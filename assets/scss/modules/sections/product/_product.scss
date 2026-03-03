@@ -1,0 +1,532 @@
+// ============================================
+//  PRODUCT PAGE — Sections
+// ============================================
+
+@use "../../../abstracts" as *;
+
+// ============================================
+//  PRODUCT DETAIL
+// ============================================
+
+.product-detail {
+  padding-block: $space-section;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $space-3xl;
+    align-items: start;
+  }
+}
+
+// ============================================
+//  PRODUCT GALLERY
+// ============================================
+
+.product-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: $space-md;
+
+  &__main {
+    aspect-ratio: 1;
+    border-radius: $radius-md;
+    overflow: hidden;
+    background-color: $color-surface-alt;
+  }
+
+  &__thumbs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: $space-sm;
+  }
+
+  &__thumb {
+    aspect-ratio: 1;
+    border-radius: $radius-sm;
+    overflow: hidden;
+    background-color: $color-surface-alt;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: border-color $transition-fast;
+
+    &--active {
+      border-color: $color-accent;
+    }
+
+    &:hover {
+      border-color: $color-accent;
+    }
+  }
+}
+
+// ============================================
+//  PRODUCT INFO
+// ============================================
+
+.product-info {
+  &__brand {
+    font-size: $fs-xs;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: $color-accent;
+    margin-bottom: $space-sm;
+  }
+
+  &__name {
+    font-size: clamp($fs-xl, 3vw, $fs-2xl);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    line-height: 1.05;
+    color: $color-white;
+    margin-bottom: $space-md;
+  }
+
+  &__rating {
+    display: flex;
+    align-items: center;
+    gap: $space-sm;
+    margin-bottom: $space-lg;
+  }
+
+  &__stars {
+    display: flex;
+    gap: 2px;
+
+    ion-icon {
+      font-size: 1rem;
+      color: $color-star;
+    }
+  }
+
+  &__rating-count {
+    font-size: $fs-xs;
+    color: $color-text-muted;
+  }
+
+  &__price-block {
+    display: flex;
+    align-items: baseline;
+    gap: $space-sm;
+    margin-bottom: $space-xl;
+    padding-bottom: $space-xl;
+    border-bottom: 1px solid $color-border;
+  }
+
+  &__price-current {
+    font-size: $fs-2xl;
+    font-weight: 900;
+    color: $color-white;
+  }
+
+  &__price-old {
+    font-size: $fs-md;
+    color: $color-text-muted;
+    text-decoration: line-through;
+  }
+
+  &__price-badge {
+    padding: 0.2rem 0.6rem;
+    background-color: $color-accent;
+    color: $color-white;
+    font-size: $fs-xs;
+    font-weight: 700;
+    border-radius: 2px;
+  }
+
+  &__desc {
+    font-size: $fs-base;
+    color: $color-text-muted;
+    line-height: 1.8;
+    margin-bottom: $space-xl;
+  }
+}
+
+// ============================================
+//  SIZE SELECTOR
+// ============================================
+
+.size-selector {
+  margin-bottom: $space-xl;
+
+  &__label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: $space-sm;
+
+    span {
+      font-size: $fs-xs;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: $color-white;
+    }
+
+    a {
+      font-size: $fs-xs;
+      color: $color-text-muted;
+      text-decoration: underline;
+      transition: color $transition-fast;
+
+      &:hover {
+        color: $color-accent;
+      }
+    }
+  }
+
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $space-sm;
+  }
+
+  &__btn {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $color-border;
+    border-radius: $radius-sm;
+    font-size: $fs-sm;
+    font-weight: 700;
+    color: $color-text-muted;
+    cursor: pointer;
+    transition:
+      border-color $transition-fast,
+      color $transition-fast,
+      background-color $transition-fast;
+
+    &:hover {
+      border-color: $color-white;
+      color: $color-white;
+    }
+
+    &--active {
+      border-color: $color-accent;
+      color: $color-white;
+      background-color: $color-accent;
+    }
+
+    &--unavailable {
+      opacity: 0.25;
+      cursor: not-allowed;
+      text-decoration: line-through;
+    }
+  }
+}
+
+// ============================================
+//  PRODUCT ACTIONS
+// ============================================
+
+.product-actions {
+  display: flex;
+  flex-direction: column;
+  gap: $space-sm;
+  margin-bottom: $space-xl;
+
+  &__wishlist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: $space-xs;
+    font-size: $fs-xs;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: $color-text-muted;
+    cursor: pointer;
+    transition: color $transition-fast;
+
+    ion-icon {
+      font-size: 1.2rem;
+    }
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+}
+
+// ============================================
+//  PRODUCT META (livraison, retours)
+// ============================================
+
+.product-meta {
+  display: flex;
+  flex-direction: column;
+  gap: $space-md;
+  padding-top: $space-xl;
+  border-top: 1px solid $color-border;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: $space-md;
+
+    ion-icon {
+      font-size: 1.4rem;
+      color: $color-accent;
+      flex-shrink: 0;
+    }
+  }
+
+  &__text {
+    font-size: $fs-sm;
+    color: $color-text-muted;
+    line-height: 1.6;
+
+    strong {
+      color: $color-white;
+      font-weight: 700;
+    }
+  }
+}
+
+// ============================================
+//  PRODUCT REVIEWS
+// ============================================
+
+.reviews {
+  padding-block: $space-section;
+  border-top: 1px solid $color-border;
+
+  &__header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: $space-3xl;
+    flex-wrap: wrap;
+    gap: $space-md;
+  }
+
+  &__summary {
+    display: flex;
+    align-items: center;
+    gap: $space-lg;
+    margin-bottom: $space-3xl;
+    padding: $space-2xl;
+    background-color: $color-bg-elevated;
+    border: 1px solid $color-border;
+    border-radius: $radius-md;
+  }
+
+  &__score {
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  &__score-number {
+    font-size: $fs-2xl;
+    font-weight: 900;
+    color: $color-white;
+    display: block;
+  }
+
+  &__score-stars {
+    display: flex;
+    gap: 2px;
+    justify-content: center;
+    margin-block: $space-xs;
+
+    ion-icon {
+      font-size: 0.9rem;
+      color: $color-star;
+    }
+  }
+
+  &__score-count {
+    font-size: $fs-xs;
+    color: $color-text-muted;
+  }
+
+  &__bars {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: $space-xs;
+  }
+
+  &__bar-row {
+    display: flex;
+    align-items: center;
+    gap: $space-sm;
+  }
+
+  &__bar-label {
+    font-size: $fs-xs;
+    color: $color-text-muted;
+    width: 2rem;
+    text-align: right;
+    flex-shrink: 0;
+  }
+
+  &__bar-track {
+    flex: 1;
+    height: 6px;
+    background-color: $color-surface-alt;
+    border-radius: $radius-full;
+    overflow: hidden;
+  }
+
+  &__bar-fill {
+    height: 100%;
+    background-color: $color-accent;
+    border-radius: $radius-full;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $space-lg;
+  }
+}
+
+// ============================================
+//  REVIEW CARD
+// ============================================
+
+.review-card {
+  background-color: $color-bg-elevated;
+  border: 1px solid $color-border;
+  border-radius: $radius-md;
+  padding: $space-2xl;
+  transition: border-color $transition-base;
+
+  &:hover {
+    border-color: $color-accent;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: $space-md;
+    flex-wrap: wrap;
+    gap: $space-sm;
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+    gap: $space-md;
+  }
+
+  &__avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: $radius-full;
+    overflow: hidden;
+    background-color: $color-surface-alt;
+    flex-shrink: 0;
+  }
+
+  &__name {
+    font-size: $fs-sm;
+    font-weight: 700;
+    color: $color-white;
+  }
+
+  &__date {
+    font-size: $fs-xs;
+    color: $color-text-muted;
+  }
+
+  &__stars {
+    display: flex;
+    gap: 2px;
+
+    ion-icon {
+      font-size: 0.9rem;
+      color: $color-star;
+    }
+  }
+
+  &__title {
+    font-size: $fs-base;
+    font-weight: 700;
+    color: $color-white;
+    margin-bottom: $space-xs;
+  }
+
+  &__body {
+    font-size: $fs-sm;
+    color: $color-text-muted;
+    line-height: 1.8;
+  }
+
+  &__verified {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: $fs-xs;
+    color: $color-accent;
+    margin-top: $space-md;
+
+    ion-icon {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+// ============================================
+//  RELATED PRODUCTS
+// ============================================
+
+.related {
+  padding-block: $space-section;
+  border-top: 1px solid $color-border;
+  background-color: $color-bg-elevated;
+
+  &__header {
+    text-align: center;
+    margin-bottom: $space-3xl;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $space-lg;
+  }
+}
+
+// ============================================
+//  RESPONSIVE — TABLET (768px)
+// ============================================
+
+@include tablet {
+  .product-detail__inner {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .reviews__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .related__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+// ============================================
+//  RESPONSIVE — DESKTOP (1200px)
+// ============================================
+
+@include desktop {
+  .product-detail__inner {
+    grid-template-columns: 1fr 1fr;
+    gap: $space-4xl;
+  }
+
+  .reviews__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .related__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

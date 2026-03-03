@@ -1,0 +1,42 @@
+// ============================================
+//  BRANDS BANNER
+// ============================================
+
+@use "../../../abstracts" as *;
+
+.brands {
+  padding-block: $space-2xl;
+  border-bottom: 1px solid $color-border;
+  overflow: hidden;
+
+  &__track {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(2rem, 5vw, 4rem);
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    font-size: clamp($fs-md, 2.5vw, $fs-xl);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: $color-text-muted;
+    opacity: 0.35;
+    transition: opacity $transition-base;
+    white-space: nowrap;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__separator {
+    width: 6px;
+    height: 6px;
+    background-color: $color-accent;
+    border-radius: $radius-full;
+    flex-shrink: 0;
+  }
+}
